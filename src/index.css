@@ -60,6 +60,21 @@ body {
   }
 }
 
+.tiles {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  padding: 1rem;
+  text-decoration: none;
+
+  border: 5px solid #ececec;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
 .navbar {
   background-color: var(--secondary-color);
   .domain {
@@ -218,19 +233,8 @@ body {
         gap: 20px;
         padding-bottom: 1rem;
         .about-tile {
-          color: var(--secondary-color);
-          border: 5px solid #ececec;
-
-          border-radius: 10px;
-          padding: 1rem;
-
-          &:hover {
-            border-color: var(--accent-color);
-          }
-
           .tiles {
-            text-decoration: none;
-            color: var(--secondary-color);
+
             .tile-title {
               font-size: 3rem;
               font-weight: 600;
@@ -293,6 +297,7 @@ body {
 
 .brands {
   background-color: #FAF8EC;
+
   .brands-area {
     
     .brands-content {
@@ -301,8 +306,15 @@ body {
       justify-content: space-between;
 
       padding: 1rem;
-      
     }
   }
-  
+}
+
+.services {
+  .services-area {
+    .services-content {
+      
+
+    }
+  }
 }
