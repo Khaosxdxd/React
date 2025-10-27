@@ -70,6 +70,17 @@ body {
   border: 5px solid #ececec;
   border-radius: 10px;
 
+  .tile-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
+  .tile-text {
+    font-size: 1rem;
+    width: 300px;
+  }
+
   &:hover {
     border-color: var(--accent-color);
   }
@@ -236,7 +247,7 @@ body {
           .tiles {
 
             .tile-title {
-              font-size: 3rem;
+              font-size: 1.5rem;
               font-weight: 600;
               padding-bottom: 1rem;
             }
@@ -312,9 +323,44 @@ body {
 
 .services {
   .services-area {
-    .services-content {
-      
+    .service-info {
+      .service-highlight {
+        .service-welcome {
+          font-size: 1.5rem;
+          color: var(--accent-color);
+        }
+      }
 
+      .service-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .service-text {
+          font-size: 3.2rem;
+        }
+
+        .service-paragraph {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      .service-tile {
+        padding: 1rem;
+        .tile-title {
+          font-size: 1.5rem;
+        }
+
+        .tile-text {
+          font-size: 1rem;
+          width: 300px;
+        }
+      }
     }
   }
 }
