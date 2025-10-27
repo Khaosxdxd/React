@@ -173,10 +173,12 @@ body {
 }
 
 .about-us {
+  padding-top: 3rem;
   .about-content {
     display: grid;
     gap: 20px;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 
     grid-template-columns: 1fr auto;
     grid-template-areas: "image content";
@@ -287,4 +289,20 @@ body {
       }
     }
   }
+}
+
+.brands {
+  background-color: #FAF8EC;
+  .brands-area {
+    
+    .brands-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 1rem;
+      
+    }
+  }
+  
 }
