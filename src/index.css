@@ -199,7 +199,8 @@ body {
 }
 
 .about-us {
-  padding-top: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
   .about-content {
     display: grid;
     gap: 20px;
@@ -225,7 +226,7 @@ body {
         }
 
         .about-title {
-          font-size: 3rem;
+          font-size: 3.25rem;
           color: var(--secondary-color);
           width: 630px;
         }
@@ -322,8 +323,14 @@ body {
 }
 
 .services {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   .services-area {
+    display: flex;
+    flex-direction: column;
     .service-info {
+      padding-bottom: 1rem;
+
       .service-highlight {
         .service-welcome {
           font-size: 1.5rem;
@@ -337,28 +344,325 @@ body {
         align-items: center;
         justify-content: space-between;
 
+        color: var(--secondary-color);
+
         .service-text {
-          font-size: 3.2rem;
+          font-size: 3.25rem;
         }
 
         .service-paragraph {
           font-size: 1rem;
+          width: 800px;
         }
       }
     }
 
-    .service-content {
-      display: flex;
-      flex-direction: column;
-      .service-tile {
+    .services-content {
+      display: grid;
+      align-items: center;
+      justify-content: space-between;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas: "left image right";
+
+      .service-tiles-left {
+        grid-area: left;
+
+        .diverse {
+          padding-bottom: 1rem;
+          .tile-title {
+            font-size: 1.5rem;
+          }
+
+          .tile-text {
+            font-size: 1rem;
+            width: 300px;
+          }
+        }
+        
+        .moving {
+          .tile-title {
+            font-size: 1.5rem;
+          }
+
+          .tile-text {
+            font-size: 1rem;
+            width: 300px;
+          }
+        }
+      }
+
+      .service-image {
+        grid-area: image;
+        display: flex;
+        height: 100%;
+        width: 100%;
         padding: 1rem;
-        .tile-title {
-          font-size: 1.5rem;
+      }
+
+      .service-tiles-right {
+        grid-area: right;
+
+        .vehicle {
+          padding-bottom: 1rem;
+          .tile-title {
+            font-size: 1.5rem;
+          }
+
+          .tile-text {
+            font-size: 1rem;
+          }
         }
 
-        .tile-text {
-          font-size: 1rem;
-          width: 300px;
+        .security {
+          .tile-title {
+            font-size: 1.5rem;
+          }
+
+          .tile-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #12372a;
+  /* background-image: url('Testimonials-background.svg');
+  background-blend-mode: lighten;
+  
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center; */
+  .testimonials-area {
+
+    .testimonials-title { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .testimonials-highlight {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+
+      .testimonials-text {
+        color: var(--primary-color);
+        font-size: 3.25rem;
+        padding-bottom: 1rem;
+      }
+
+      .testimonials-paragraph {
+        color: var(--primary-color);
+        font-size: 1rem;
+        text-align: center;
+        width: 1050px;
+        padding-bottom: 3rem;
+      }
+    }
+
+    .testimonials-cards {
+      .testimonials-cards-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .card-left {
+          .card-area {
+            width: 437px;
+            height: 295px;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+
+            .card-stars {
+              padding-left: 2rem;
+              padding-top: 2rem;
+            }
+
+            .card-text {
+              font-size: 1rem;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              width: 380px;
+              color: var(--secondary-color);
+              
+            }
+
+            .card-info {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              .card-customer-info {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .card-image {
+                width: 70px;
+                height: 70px;
+                }
+                .card-customer-text {
+                  color: var(--secondary-color);
+                  .card-name {
+                    font-size: 1.25rem;
+                  }
+
+                  .card-job {
+                    font-size: .9rem;
+                  }
+                }
+              }
+
+              .card-quote {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                .card-quote-icon {
+                  width: 52px;
+                  height: 37px;
+                }
+              }
+            }
+
+            
+          }
+        }
+
+        .card-middle {
+          .card-area {
+            width: 437px;
+            height: 295px;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+
+            .card-stars {
+              padding-left: 2rem;
+              padding-top: 2rem;
+            }
+
+            .card-text {
+              font-size: 1rem;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              width: 380px;
+              color: var(--secondary-color);
+              
+            }
+
+            .card-info {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              .card-customer-info {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .card-image {
+                width: 70px;
+                height: 70px;
+                }
+                .card-customer-text {
+                  color: var(--secondary-color);
+                  .card-name {
+                    font-size: 1.25rem;
+                  }
+
+                  .card-job {
+                    font-size: .9rem;
+                  }
+                }
+              }
+
+              .card-quote {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                .card-quote-icon {
+                  width: 52px;
+                  height: 37px;
+                }
+              }
+            }
+
+            
+          }
+        }
+
+        .card-right {
+          .card-area {
+            width: 437px;
+            height: 295px;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+
+            .card-stars {
+              padding-left: 2rem;
+              padding-top: 2rem;
+            }
+
+            .card-text {
+              font-size: 1rem;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              width: 380px;
+              color: var(--secondary-color);
+              
+            }
+
+            .card-info {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-left: 2rem;
+              padding-top: 2rem;
+              .card-customer-info {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .card-image {
+                width: 70px;
+                height: 70px;
+                }
+                .card-customer-text {
+                  color: var(--secondary-color);
+                  .card-name {
+                    font-size: 1.25rem;
+                  }
+
+                  .card-job {
+                    font-size: .9rem;
+                  }
+                }
+              }
+
+              .card-quote {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                .card-quote-icon {
+                  width: 52px;
+                  height: 37px;
+                }
+              }
+            }
+          }
         }
       }
     }
