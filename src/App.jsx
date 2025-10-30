@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar';
 import About from './components/About';
 import Brands from './components/Brands';
+import WhyChooseUs from './components/WhyChooseUs';
 
 const App = () => {
   return (
@@ -180,9 +181,71 @@ const App = () => {
                     </div>
                   </div>
                 </div>
-
-                
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WhyChooseUs />
+
+      <section className='pricing-plan'>
+        <div className='container'>
+          <div className='pricing-area'>
+            <div className='pricing-info'>
+              <h4 className='pricing-highlight'>Pricing Plan</h4>
+              <h3 className='pricing-title'>Find the Perfect Plan for Your Storage Needs</h3>
+            </div>
+
+            <div className='pricing-images'>
+              <img src="Small Unit.svg" alt="small-unit" />
+              <img src="Medium Unit.svg" alt="medium-unit" />
+              <img src="Large Unit.svg" alt="large-unit" />
+              <img src="Executive Unit.svg" alt="executive-unit" />
+            </div>
+
+            {/* <div className='pricing-cards'>
+              <div className='pricing-cards-area'>
+                <div className='pricing-cards-content'>
+                  <div className='pricing-card-upper'>
+                    <div className='pricing-card-text'>
+                      <h5 className='price-plan'>Small Unit</h5>
+                    </div>
+                    <h3></h3>
+                    <h6></h6>
+                    <p></p>
+                  </div>
+                  <hr />
+                  <div className='pricing-card-lower'>
+                    <div className='card-list'>
+                      <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ol>
+                    </div>
+                    <div className='pricing-card-button'>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      <section className='looking-for-secure'>
+        <div className='container'>
+          <div className='lfs-area'>
+            <div className='lfs-text'>
+              <h3 className='lfs-title'>Looking for Secure and Flexible Storage? Find Your Perfect Fit With Us.</h3>
+              <p className='lfs-paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
+            </div>
+            <div className='lfs-button'>
+              <a className='button-dark' href="#">Book Now</a>
             </div>
           </div>
         </div>
