@@ -27,6 +27,24 @@ body {
   margin: 0 auto;
 }
 
+hr {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style-image: url(List-icon-dark.svg);
+
+}
+
+
 .button {
   text-decoration: none;
   color: var(--secondary-color);
@@ -755,41 +773,132 @@ body {
       }
     }
 
-    .pricing-images {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    /* .pricing-cards {
+    .pricing-cards {
       background-color: var(--tertiary-color);
+      border: 5px solid #ececec;
       border-radius: 10px;
       width: 321px;
       height: 519px;
       .pricing-cards-area {
         .pricing-cards-content {
-          .pricing-card-upper {
-            .pricing-card-text {
-              .price-plan {
-                font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .pricing-card {
+            text-decoration: none;
+            color: var(--secondary-color);
+            .pricing-card-upper {
+
+              .pricing-card-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .price-plan {
+                  font-size: 1.5rem;
+                  padding-top: 2rem;
+                }
+              }
+
+              .price-cost {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1rem;
+                gap: 1rem;
+                .price-gold {
+                  display: flex;
+                  color: var(--accent-color);
+                  gap: 1rem;
+                  .price-dollar {
+                    font-size: 1.5rem;
+                  }
+                  .price-amount {
+                    font-size: 3.25rem;
+                  }
+
+                  .price-black {
+                    .price-month {
+                      font-size: 1rem;
+                    }
+                  }
+                }
+              }
+
+              .price-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-top: 1rem;
+                .price-text {
+                  font-size: 1rem;
+                  width: 250px;
+                }
               }
             }
-          }
 
-          .pricing-card-lower {
+            .hr {
+              max-width: 248px;
+            }
 
+            .pricing-card-lower {
+              .card-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .card-list-items {
+                  padding-top: 1rem;
+                  .card-item-1 { font-size: 1rem; padding-bottom: .6rem;}
+                  .card-item-2 { font-size: 1rem; padding-bottom: .6rem;}
+                  .card-item-3 { font-size: 1rem; padding-bottom: .6rem;}
+                  .card-item-4 { font-size: 1rem; padding-bottom: .6rem;}
+                  .card-item-5 { font-size: 1rem; padding-bottom: .6rem;}
+                }
+              }
+
+              .pricing-card-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1rem;
+              }
+            }
+
+            
           }
+          
         }
       }
-    } */
+
+      &:hover {
+        background-color: var(--secondary-color);
+        .price-plan {
+          color: var(--primary-color);
+        }
+        .price-black {
+          color: var(--primary-color);
+        }
+        .price-info {
+          color: var(--primary-color);
+        }
+        .hr {
+          color: var(--primary-color);
+        }
+        .card-list {
+          color: var(--primary-color);
+        }
+        .card-list-items {
+          list-style-image: url(List-icon-light.svg);
+        }
+      }
+    }
   }
 }
 
 .looking-for-secure {
   background-color: var(--secondary-color);
   padding-top: 3rem;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
   .lfs-area {
     display: flex;
     flex-direction: column;
