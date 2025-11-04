@@ -35,13 +35,11 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  
   color: var(--secondary-color);
 }
 
 ul {
   list-style-image: url(List-icon-dark.svg);
-
 }
 
 
@@ -118,13 +116,33 @@ ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 2rem;
       .domain-phone {
-        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .domain-phone-icon {
+          width: 18px;
+          height: 18px;
+        }
+        .domain-phone-text {
+          font-size: 1rem;
+        }
       }
 
       .domain-email {
-        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .domain-email-icon {
+          width: 18px;
+          height: 18px;
+        }
+        .domain-email-text {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -758,13 +776,14 @@ ul {
 
 .pricing-plan {
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   .pricing-area {
     .pricing-info {
       color: var(--secondary-color);
       padding-bottom: 1rem;
       .pricing-highlight {
         font-size: 1.5rem;
+        color: var(--accent-color);
       }
 
       .pricing-title {
@@ -773,122 +792,122 @@ ul {
       }
     }
 
-    .pricing-cards {
-      background-color: var(--tertiary-color);
-      border: 5px solid #ececec;
-      border-radius: 10px;
-      width: 321px;
-      height: 519px;
-      .pricing-cards-area {
-        .pricing-cards-content {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          .pricing-card {
-            text-decoration: none;
-            color: var(--secondary-color);
-            .pricing-card-upper {
+    .pricing-cards-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .pricing-cards {
+        background-color: var(--tertiary-color);
+        border: 5px solid #ececec;
+        border-radius: 10px;
+        width: 321px;
+        height: 519px;
+        .pricing-cards-area {
+          .pricing-cards-content {
+            .pricing-card {
+              text-decoration: none;
+              color: var(--secondary-color);
+              .pricing-card-upper {
 
-              .pricing-card-text {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .price-plan {
-                  font-size: 1.5rem;
-                  padding-top: 2rem;
-                }
-              }
-
-              .price-cost {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-top: 1rem;
-                gap: 1rem;
-                .price-gold {
+                .pricing-card-text {
                   display: flex;
-                  color: var(--accent-color);
-                  gap: 1rem;
-                  .price-dollar {
+                  align-items: center;
+                  justify-content: center;
+                  .price-plan {
                     font-size: 1.5rem;
+                    padding-top: 2rem;
                   }
-                  .price-amount {
-                    font-size: 3.25rem;
-                  }
+                }
 
-                  .price-black {
-                    .price-month {
-                      font-size: 1rem;
+                .price-cost {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 1rem;
+                  gap: 1rem;
+                  .price-gold {
+                    display: flex;
+                    color: var(--accent-color);
+                    gap: 1rem;
+                    .price-dollar {
+                      font-size: 1.5rem;
+                    }
+                    .price-amount {
+                      font-size: 3.25rem;
+                    }
+
+                    .price-black {
+                      .price-month {
+                        font-size: 1rem;
+                      }
                     }
                   }
                 }
-              }
 
-              .price-info {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding-top: 1rem;
-                .price-text {
-                  font-size: 1rem;
-                  width: 250px;
-                }
-              }
-            }
-
-            .hr {
-              max-width: 248px;
-            }
-
-            .pricing-card-lower {
-              .card-list {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .card-list-items {
+                .price-info {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
                   padding-top: 1rem;
-                  .card-item-1 { font-size: 1rem; padding-bottom: .6rem;}
-                  .card-item-2 { font-size: 1rem; padding-bottom: .6rem;}
-                  .card-item-3 { font-size: 1rem; padding-bottom: .6rem;}
-                  .card-item-4 { font-size: 1rem; padding-bottom: .6rem;}
-                  .card-item-5 { font-size: 1rem; padding-bottom: .6rem;}
+                  .price-text {
+                    font-size: 1rem;
+                    width: 250px;
+                  }
                 }
               }
 
-              .pricing-card-button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-top: 1rem;
+              .hr {
+                max-width: 248px;
+              }
+
+              .pricing-card-lower {
+                .card-list {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .card-list-items {
+                    padding-top: 1rem;
+                    .card-item-1 { font-size: 1rem; padding-bottom: .6rem;}
+                    .card-item-2 { font-size: 1rem; padding-bottom: .6rem;}
+                    .card-item-3 { font-size: 1rem; padding-bottom: .6rem;}
+                    .card-item-4 { font-size: 1rem; padding-bottom: .6rem;}
+                    .card-item-5 { font-size: 1rem; padding-bottom: .6rem;}
+                  }
+                }
+
+                .pricing-card-button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 1rem;
+                }
               }
             }
-
-            
           }
-          
         }
-      }
 
-      &:hover {
-        background-color: var(--secondary-color);
-        .price-plan {
-          color: var(--primary-color);
-        }
-        .price-black {
-          color: var(--primary-color);
-        }
-        .price-info {
-          color: var(--primary-color);
-        }
-        .hr {
-          color: var(--primary-color);
-        }
-        .card-list {
-          color: var(--primary-color);
-        }
-        .card-list-items {
-          list-style-image: url(List-icon-light.svg);
+        &:hover {
+          background-color: var(--secondary-color);
+          .price-plan {
+            color: var(--primary-color);
+          }
+          .price-black {
+            color: var(--primary-color);
+          }
+          .price-info {
+            color: var(--primary-color);
+          }
+          .hr {
+            color: var(--primary-color);
+          }
+          .card-list {
+            color: var(--primary-color);
+          }
+          .card-list-items {
+            list-style-image: url(List-icon-light.svg);
+          }
         }
       }
     }
@@ -921,6 +940,210 @@ ul {
         font-size: 1rem;
         width: 1000px;
         padding-bottom: 3rem;
+      }
+    }
+  }
+}
+
+.blog {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  .blog-area {
+    .blog-info {
+      padding-bottom: 1rem;
+      .blog-highlight {
+        .blog-highlight-text {
+          color: var(--accent-color);
+          font-size: 1.5rem;
+        }
+      }
+
+      .blog-title {
+        color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blog-text {
+          font-size: 3.25rem;
+          width: 670px;
+        }
+        .blog-paragraph {
+          font-size: 1rem;
+          width: 671px;
+        }
+      }
+    }
+
+    .blog-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      .blog-card-area {
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        width: 430px;
+        height: 558px;
+        .blog-card-content {
+          .blog-card {
+            text-decoration: none;
+            .blog-card-upper {
+              .blog-card-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5rem;
+              }
+            }
+
+            .blog-card-lower {
+              .blog-card-date {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                gap: 10px;
+                .blog-date-image {
+                  width: 16px;
+                  height: 18px;
+                }
+                .blog-date-text {
+                  color: var(--primary-color);
+                  font-size: .9rem;
+                }
+              }
+              .blog-card-text {
+                color: var(--primary-color);
+                padding: 1.5rem;
+
+                .blog-card-title {
+                  font-size: 1.5rem;
+                  padding-bottom: 1rem;
+                }
+                .blog-card-paragraph {
+                  font-size: 1rem;
+                }
+              }
+
+              .blog-card-link {
+                padding-left: 1.5rem;
+                .blog-link-text {
+                  text-decoration: none;
+                  color: var(--accent-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscribe {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--quarternary-color);
+  .sub-area {
+    
+    .sub-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .sub-text {
+        color: var(--secondary-color);
+        .sub-title {
+          font-size: 3.25rem;
+          padding-bottom: 1rem;
+        }
+        .sub-paragraph {
+          font-size: 1rem;
+        }
+      }
+
+      .sub-form {
+        font-size: 1rem;
+        height: 60px;
+
+        .form-group {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+
+          .form-label {
+            font-size: 1rem;
+          }
+
+          .form-input[type='text'] {
+            font-size: 1rem;
+            width: 540px;
+            padding: 1rem;
+            border-radius: 5px;
+            border-color: var(--accent-color);
+            border-style: solid;
+          }
+
+          .button {
+            font-size: 1rem;
+          }
+          
+        }
+
+        .error {
+          border-color: red;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  .footer-area {
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 90px;
+      .footer-rights {
+        font-size: 1rem;
+        display: flex;
+        color: var(--primary-color);
+        gap: .2rem;
+      }
+
+      .footer-eula {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        gap: 3rem;
+
+        .footer-terms {
+          display: flex;
+          gap: .5rem;
+          terms-image {
+            width: 15px;
+            height: 15px;
+          }
+          .terms-text {
+            font-size: 1rem;
+          }
+        }
+        .footer-policy {
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+          .policy-image {
+            width: 15px;
+            height: 15px;
+          }
+          .policy-text {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
