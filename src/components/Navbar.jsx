@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -30,15 +31,16 @@ const Navbar = () => {
         <section className='storaid'>
             <div className='nav-container'>
                 <div className='storaid-content'>
-                    <div className='storaid-logo'>
+                    <Link className='storaid-logo' to="/">
                         <img src="Logo.svg" alt="logo" />
-                    </div>
+                    </Link>
                     
                     <div className='storaid-navlinks'>
-                        <a className='home' href="#">Home</a>
-                        <a className='about' href="#">About Us</a>
-                        <a className='service' href="#">Services</a>
-                        <a className='contact' href="#">Contact Us</a>
+                        <NavLink className='home' to="/">Home</NavLink>
+                        <NavLink className='about' to="/about">About Us</NavLink>
+                        <NavLink className='service' to="/services">Services</NavLink>
+                        <NavLink className='contact' to="/contact">Contact Us</NavLink>
+                        <NavLink className='booking' to="/booking">Booking</NavLink>
                     </div>
 
                     <div className='storaid-button'>
