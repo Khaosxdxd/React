@@ -1,11 +1,17 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import ContactHeader from '../components/ContactHeader'
 import Subscribe from '../components/Subscribe'
+import FAQ from '../components/FAQ'
+import FindUs from '../components/FindUs'
+import GetInTouch from '../components/GetInTouch'
 
 const ContactUs = () => {
   return (
     <>
-        <Hero />
+        <ContactHeader />
+        <GetInTouch />
+        <FindUs />
+        <FAQ />
         <Subscribe />
     </>
   )

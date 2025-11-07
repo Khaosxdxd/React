@@ -192,6 +192,31 @@ ul {
   }
 }
 
+.header {
+  background-color: var(--secondary-color);
+  
+  .header-area {
+    
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--tertiary-color);
+
+      height: 467px;
+      .header-title {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+      }
+
+      .header-paragraph {
+        font-size: 1rem;
+        width: 600px;
+      }
+    }
+  }
+}
+
 .hero {
   background-color: var(--secondary-color);
   .hero-content {
@@ -713,6 +738,191 @@ ul {
           }
         }
       }
+    }
+  }
+}
+
+.find-us-on {
+  background-color: var(--secondary-color);
+  .find-area {
+    .find-content {
+      display: flex;
+      justify-content: space-around;
+      .find-image {
+        display: flex;
+        width: 100%;
+      }
+
+      .find-info {
+        background-color: #F1FFEA86;
+        padding: 3rem;
+        color: var(--secondary-color);
+        .find-title {
+          padding-bottom: 2rem;
+          .find-text {
+            font-size: 3.25rem;
+            padding-bottom: 1rem;
+          }
+          .find-paragraph {
+            font-size: 1rem;
+          }
+        }
+
+        .find-contact {
+          .call-center {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 2rem;
+            .cc-image {
+              width: 60px;
+              height: 60px;
+            }
+            .call-center-text {
+              .cc-title {
+                font-size: 1.5rem;
+              }
+              .cc-paragraph {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .email-address {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 2rem;
+            .ea-image {
+              width: 60px;
+              height: 60px;
+            }
+            .email-address-text {
+              .ea-title {
+                font-size: 1.5rem;
+              }
+              .ea-paragraph {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 2rem;
+            .l-image {
+              width: 60px;
+              height: 60px;
+            }
+            .location-text {
+              .l-title {
+                font-size: 1.5rem;
+              }
+              .l-paragraph {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+
+        .find-social-media {
+          display: flex;
+          align-items: center;
+          width: 560px;
+          .sm-text {
+            font-size: 1.5rem;
+          }
+          .find-hr {
+            width: 175px;
+            height: 2px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+
+          .sm-icons {
+            width: 30px;
+            height: 30px;
+            gap: 1rem;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  background-color: var(--primary-color);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .faq-area {
+    .faq-content {
+      display: flex;
+      justify-content: space-between;
+      .faq-title {
+
+        .faq-highlight {
+          .highlight-text {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+          }
+        }
+
+        .faq-text {
+          color: var(--secondary-color);
+          .faq-title-text {
+            font-size: 3.25rem;
+          }
+
+          .faq-paragraph {
+            font-size: 1rem;
+            width: 600px;
+          }
+        }
+      }
+
+      .accordion-area {
+        display: flex;
+        flex-direction: column;
+        .accordion {
+          font-size: 1rem;
+          font-weight: 600;
+          width: 670px;
+          background-color: #ECECEC;
+          color: var(--secondary-color);
+          border-radius: 10px;
+          border: none;
+          padding: 1.1rem;
+          margin-bottom: 1rem;
+          text-align: left;
+          cursor: pointer;
+          outline: none;
+          transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+          background-color: var(--accent-color);
+          color: var(--primary-color);
+        }
+
+        .panel {
+          font-size: 1rem;
+          width: 578px;
+          max-height: 0;
+          display: none;
+          overflow: hidden;
+          padding: 0 1.1rem;
+          padding-bottom: 1rem;
+          transition: 0.2s ease-in-out;
+        }
+
+        .accordion::after {
+
+        }
+      }
+      
     }
   }
 }

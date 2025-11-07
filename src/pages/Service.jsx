@@ -1,16 +1,18 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import ServiceHeader from '../components/ServiceHeader'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 import LookingForSecure from '../components/LookingForSecure'
 import Subscribe from '../components/Subscribe'
+import FAQ from '../components/FAQ'
 
 const Service = () => {
   return (
     <>
-        <Hero />
+        <ServiceHeader />
         <Services />
         <Testimonials />
+        <FAQ />
         <LookingForSecure />
         <Subscribe />
     </>

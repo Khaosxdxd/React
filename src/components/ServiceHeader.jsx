@@ -7,7 +7,7 @@ const Header = () => {
         <div className='container'>
           <div className='header-area'>
             <div className='header-text'>
-              <h1 className='header-title'>About Us</h1>
+              <h1 className='header-title'>Services</h1>
               <p className='header-paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             </div>
           </div>
