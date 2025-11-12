@@ -46,7 +46,7 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='button-dark' href="#">Rent Now</a>
+                                                <a className='btn-dark' href="#">Rent Now</a>
                                             </div>
                                         </div>
                                     </a>
@@ -88,7 +88,7 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='button-dark' href="#">Rent Now</a>
+                                                <a className='btn-dark' href="#">Rent Now</a>
                                             </div>
                                         </div>
                                     </a> 
@@ -130,7 +130,7 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='button-dark' href="#">Rent Now</a>
+                                                <a className='btn-dark' href="#">Rent Now</a>
                                             </div>
                                         </div>
                                     </a> 
@@ -172,7 +172,7 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='button-dark' href="#">Rent Now</a>
+                                                <a className='btn-dark' href="#">Rent Now</a>
                                             </div>
                                         </div>
                                     </a>

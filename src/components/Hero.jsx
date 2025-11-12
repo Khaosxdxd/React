@@ -12,7 +12,7 @@ const Hero = () => {
                         <p className='hero-paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem fringilla sodales. Cras lobortis, libero at iaculis luctus, nisi ex pellentesque nisi, at euismod sem ipsum ac dolor.</p>
                     
                         <div className='hero-button'>
-                            <a className='button-dark' href="#">Discover More</a>
+                            <a className='btn-dark' href="#">Discover More</a>
                         </div>
                     </div>
 

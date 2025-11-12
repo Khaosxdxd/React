@@ -1,6 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import AccordionItem from './AccordionItem'
 
 const FAQ = () => {
+const [faq, setFaq] = useState ([])
+
+  
+  useEffect (() => {
+      
+    const getFAQ = async () => {
+        try {
+            const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/faqs')
+            const result = await res.json()
+            // setBlog(res)
+            console.log('GETBLOG', result)
+            setFaq(result)
+            
+        } catch (error) {
+            console.log(error)
+        }
+        // const data = await res.json()
+    }
+
+      getFAQ()
+  }, [])
+  console.log()
+
   return (
     <>
         <section className='faq' >
@@ -18,30 +42,17 @@ const FAQ = () => {
                 </div>
 
                 <div className='accordion-area'>
-                  <button className='accordion'>Can I access my stored iterns anytime?</button>
+                  {/* <button className='accordion'>Can I access my stored iterns anytime?</button>
                   <div className='panel'>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts.Separated they in liveBookmarksgrove right at the coast</p>
-                  </div>
+                  </div> */}
 
-                  <button className='accordion'>Do you offer climate-controlled storage units?</button>
-                  <div className='panel'>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts.Separated they in liveBookmarksgrove right at the coast</p>
-                  </div>
+                    {
+                      faq.map((item) => (
+                        <AccordionItem key={faq.id} title={item.title} description={item.description} />
+                      ))
+                    }
 
-                  <button className='accordion'>How long can I rent a storage unit?</button>
-                  <div className='panel'>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts.Separated they in liveBookmarksgrove right at the coast</p>
-                  </div>
-
-                  <button className='accordion'>Can I change the size of my storage unit if I need more space?</button>
-                  <div className='panel'>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts.Separated they in liveBookmarksgrove right at the coast</p>
-                  </div>
-
-                  <button className='accordion'>How do I pay for my storage unit?</button>
-                  <div className='panel'>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,there live the blind texts.Separated they in liveBookmarksgrove right at the coast</p>
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Subscribe = () => {
+
+
   return (
     <>
         <section className='subscribe'>
@@ -12,11 +14,11 @@ const Subscribe = () => {
                             <p className='sub-paragraph'>Subscribe to our newsletter to receive early discount offers, updates and info</p>
                         </div>
 
-                        <form className='sub-form'>
+                        <form id='subForm' className='sub-form'>
                             <div className='form-group'>
                                 <label for="email" className='form-label'></label>
-                                <input id='email' type="text" className='form-input' value="" placeholder='Enter your Email'/>
-                                <a className='button' href="#">Submit</a>
+                                <input id='email' type="text" className='form-input' placeholder='Enter your Email'/>
+                                <a className='btn' href="#">Submit</a>
                             </div>
                         </form>
                     </div>

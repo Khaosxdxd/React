@@ -1,6 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Testimonial from './Testimonial'
 
 const Testimonials = () => {
+const [testimonials, setTestimonials] = useState ([])
+
+    
+    useEffect (() => {
+        
+        const getTestimonials = async () => {
+            try {
+                const res = await fetch('https://win25-jsf-assignment.azurewebsites.net/api/testimonials')
+                const result = await res.json()
+                // setBlog(res)
+                console.log('GETBLOG', result)
+                setTestimonials(result)
+                
+            } catch (error) {
+                console.log(error)
+            }
+            // const data = await res.json()
+        }
+
+        getTestimonials()
+    }, [])
+    console.log()
+
   return (
     <>
         <section className='testimonials'>
@@ -14,88 +38,13 @@ const Testimonials = () => {
 
                     <div className='testimonials-cards'>
                         <div className='testimonials-cards-area'>
-                            <div className='card-left'>
-                                <div className='card-area'>
-                                    <div className='card-stars'>
-                                        <img src="4-Stars.svg" alt="rating" />
-                                    </div>
 
-                                    <div className='card-text'>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis 
-                                            cing elit. Ut libero lectus, porta nec turpis sit 
-                                            amet, lobortis fringilla ante.</p>
-                                    </div>
+                            {
+                                testimonials.map((item) => (
+                                    <Testimonial key={testimonials.id} comment={item.comment} avatarUrl={item.avatarUrl} companyName={item.companyName} name={item.name} rating={item.rating} />
+                                ))
+                            }
 
-                                    <div className='card-info'>
-                                        <div className='card-customer-info'>
-                                            <img className='card-image' src="Customer-image.svg" alt="user" />
-                                            <div className='card-customer-text'>
-                                            <h6 className='card-name'>Aiden Harvey</h6>
-                                            <p className='card-job'>Customer</p>
-                                        </div>
-                                    </div>
-                                        <div className='card-quote'>
-                                            <img className='card-quote-icon' src="Icon.svg" alt="quote" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='card-middle'>
-                                <div className='card-area'>
-                                    <div className='card-stars'>
-                                        <img src="4-Stars.svg" alt="rating" />
-                                    </div>
-
-                                    <div className='card-text'>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis 
-                                            cing elit. Ut libero lectus, porta nec turpis sit 
-                                            amet, lobortis fringilla ante.</p>
-                                    </div>
-
-                                    <div className='card-info'>
-                                        <div className='card-customer-info'>
-                                            <img className='card-image' src="Customer-image.svg" alt="user" />
-                                            <div className='card-customer-text'>
-                                            <h6 className='card-name'>Carrisa Jocelyn</h6>
-                                            <p className='card-job'>Customer</p>
-                                        </div>
-                                        
-                                        </div>
-                                        <div className='card-quote'>
-                                            <img className='card-quote-icon' src="Icon.svg" alt="quote" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='card-right'>
-                                <div className='card-area'>
-                                    <div className='card-stars'>
-                                        <img src="4-Stars.svg" alt="rating" />
-                                    </div>
-
-                                    <div className='card-text'>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipis 
-                                            cing elit. Ut libero lectus, porta nec turpis sit 
-                                            amet, lobortis fringilla ante.</p>
-                                    </div>
-
-                                    <div className='card-info'>
-                                        <div className='card-customer-info'>
-                                            <img className='card-image' src="Customer-image.svg" alt="user" />
-                                            <div className='card-customer-text'>
-                                            <h6 className='card-name'>Celvin Gabriel</h6>
-                                            <p className='card-job'>Customer</p>
-                                        </div>
-                                        
-                                    </div>
-                                        <div className='card-quote'>
-                                            <img className='card-quote-icon' src="Icon.svg" alt="quote" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

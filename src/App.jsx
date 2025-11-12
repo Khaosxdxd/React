@@ -7,6 +7,7 @@ import ContactUs from './pages/ContactUs'
 
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
+import Booking from './pages/Booking'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path='/booking' element={<Booking />} />
           </Routes>
         </main>
       <Footer />

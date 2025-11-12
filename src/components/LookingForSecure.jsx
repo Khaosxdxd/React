@@ -11,7 +11,7 @@ const LookingForSecure = () => {
                         <p className='lfs-paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.</p>
                     </div>
                     <div className='lfs-button'>
-                        <a className='button-dark' href="#">Book Now</a>
+                        <a className='btn-dark' href="#">Book Now</a>
                     </div>
                 </div>
             </div>

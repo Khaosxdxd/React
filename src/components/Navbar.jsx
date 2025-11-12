@@ -40,11 +40,10 @@ const Navbar = () => {
                         <NavLink className='about' to="/about">About Us</NavLink>
                         <NavLink className='service' to="/services">Services</NavLink>
                         <NavLink className='contact' to="/contact">Contact Us</NavLink>
-                        <NavLink className='booking' to="/booking">Booking</NavLink>
                     </div>
 
                     <div className='storaid-button'>
-                        <a className='button' href="#">Book Now</a>
+                        <a className='btn' href="/booking">Book Now</a>
                     </div>
                 </div>
             </div>

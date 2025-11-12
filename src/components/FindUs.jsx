@@ -10,6 +10,7 @@ const FindUs = () => {
                         <div className='find-image'>
                             <img src="Grey-female.svg" alt="grey-female" />
                         </div>
+                        
                         <div className='find-info'>
                             <div className='find-title'>
                                 <h3 className='find-text'>Find Us On:</h3>
