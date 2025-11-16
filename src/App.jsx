@@ -8,6 +8,7 @@ import ContactUs from './pages/ContactUs'
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import Booking from './pages/Booking'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path='/booking' element={<Booking />} />
+            <Route path='/errorpage' element={<ErrorPage />} />
           </Routes>
         </main>
       <Footer />

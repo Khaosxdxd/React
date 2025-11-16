@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AccordionItem = ({title, description}) => {
-  return (
-    <>
-        <button className='accordion'>{title}</button>
-        <div className='panel'>
-        <p>{description}</p>
-        </div>
-</>
-  )
+
+  const [isOpen, setIsOpen] = useState(false)
+
+    const toggleAccordion = () => {
+      setIsOpen(!isOpen)
+    }
+
+    return (
+      <>
+        <button className={`accordion ${isOpen ? 'active': ''}`} onClick={toggleAccordion}>{title}</button>
+        {
+          isOpen && (
+            <div className={`panel ${isOpen ? 'active': ''}`}>
+              <p>{description}</p>
+            </div>
+          )
+        }
+      </>
+    )
 }
 
 export default AccordionItem

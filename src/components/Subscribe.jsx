@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Subscribe = () => {
-
 
   return (
     <>
@@ -18,8 +18,8 @@ const Subscribe = () => {
                             <div className='form-group'>
                                 <label for="email" className='form-label'></label>
                                 <input id='email' type="text" className='form-input' placeholder='Enter your Email'/>
-                                <a className='btn' href="#">Submit</a>
                             </div>
+                            <button id='submit-btn' className='btn'>Submit</button>
                         </form>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ const GetInTouch = () => {
                         </div>
 
                         <div className='git-right'>
-                            <div className='git-forms'>
+                            <div id='regForm' className='git-forms'>
                                 <form className='git-name-form'>
                                     <div className='git-form-group'>
                                         <p className='form-name'>Your name</p>
@@ -64,9 +64,11 @@ const GetInTouch = () => {
                                         <input id='name' type="text" className='form-input' placeholder='Comments'/>
                                     </div>
                                 </form>
+
+                                <button id='submit-btn' className='btn'>Submit</button>
                             </div>
 
-                            <button id='submit-bu' className='btn'>Submit</button>
+                            
                         </div>
                     </div>
                 </div>

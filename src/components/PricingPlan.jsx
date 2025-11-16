@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PricingPlan = () => {
   return (
@@ -15,7 +16,7 @@ const PricingPlan = () => {
                         <div className='pricing-cards'>
                             <div className='pricing-cards-area'>
                                 <div className='pricing-cards-content'>
-                                    <a className='pricing-card' href="#">
+                                    <Link className='pricing-card' href="#">
                                         <div className='pricing-card-upper'>
                                             <div className='pricing-card-text'>
                                                 <h5 className='price-plan'>Small Unit</h5>
@@ -46,10 +47,10 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='btn-dark' href="#">Rent Now</a>
+                                                <Link className='btn-dark' href="#">Rent Now</Link>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +58,7 @@ const PricingPlan = () => {
                         <div className='pricing-cards'>
                             <div className='pricing-cards-area'>
                                 <div className='pricing-cards-content'>
-                                    <a className='pricing-card' href="#">
+                                    <Link className='pricing-card' href="#">
                                         <div className='pricing-card-upper'>
                                             <div className='pricing-card-text'>
                                                 <h5 className='price-plan'>Medium Unit</h5>
@@ -88,10 +89,10 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='btn-dark' href="#">Rent Now</a>
+                                                <Link className='btn-dark' href="#">Rent Now</Link>
                                             </div>
                                         </div>
-                                    </a> 
+                                    </Link> 
                                 </div>
                             </div>
                         </div>
@@ -99,7 +100,7 @@ const PricingPlan = () => {
                         <div className='pricing-cards'>
                             <div className='pricing-cards-area'>
                                 <div className='pricing-cards-content'>
-                                    <a className='pricing-card' href="#">
+                                    <Link className='pricing-card' href="#">
                                         <div className='pricing-card-upper'>
                                             <div className='pricing-card-text'>
                                                 <h5 className='price-plan'>Large Unit</h5>
@@ -130,10 +131,10 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='btn-dark' href="#">Rent Now</a>
+                                                <Link className='btn-dark' href="#">Rent Now</Link>
                                             </div>
                                         </div>
-                                    </a> 
+                                    </Link> 
                                 </div>
                             </div>
                         </div>
@@ -141,7 +142,7 @@ const PricingPlan = () => {
                         <div className='pricing-cards'>
                             <div className='pricing-cards-area'>
                                 <div className='pricing-cards-content'>
-                                    <a className='pricing-card' href="#">
+                                    <Link className='pricing-card' href="#">
                                         <div className='pricing-card-upper'>
                                             <div className='pricing-card-text'>
                                                 <h5 className='price-plan'>Executive Unit</h5>
@@ -172,10 +173,10 @@ const PricingPlan = () => {
                                                 </ul>
                                             </div>
                                             <div className='pricing-card-button'>
-                                                <a className='btn-dark' href="#">Rent Now</a>
+                                                <Link className='btn-dark' href="#">Rent Now</Link>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 
                                 </div>
                             </div>

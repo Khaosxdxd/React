@@ -14,11 +14,15 @@ const Footer = () => {
                         <div className='footer-eula'>
                             <div className='footer-terms'>
                                 <img className='terms-image' src="Footer-arrow-icon.svg" alt="arrow-icon" />
-                                <p className='terms-text'>Terms & Conditions</p>
+                                <a className='terms-link' href="/errorpage">
+                                    <p className='terms-text'>Terms & Conditions</p>
+                                </a>
                             </div>
                             <div className='footer-policy'>
                                 <img className='policy-image' src="Footer-arrow-icon.svg" alt="arrow-icon" />
-                                <p className='policy-text'>Privacy Policy</p>
+                                <a className='policy-link' href="/errorpage">
+                                    <p className='policy-text'>Privacy Policy</p>
+                                </a>
                             </div>
                         </div>
                     </div>

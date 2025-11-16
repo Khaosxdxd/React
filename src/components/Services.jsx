@@ -34,7 +34,7 @@ const Services = () => {
                         </div>
 
                         <div className='service-image'>
-                            <img src="Bg Img.svg" alt="bg-image" />
+                            <img src="Services-image.jpg" alt="bg-image" />
                         </div>
                         
                         <div className='service-tiles-right'>

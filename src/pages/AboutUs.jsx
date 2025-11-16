@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import About from '../components/About'
 import Brands from '../components/Brands'
 import Testimonials from '../components/Testimonials'
@@ -13,18 +13,11 @@ const AboutUs = () => {
         <About />
         <Brands />
         <Testimonials />
-        <WhyChooseUs />
+        <WhyChooseUs  />
         <Subscribe />
     </>
   )
 }
 
-// function AboutTitle() {
-//   const [title, setTitle] = useState("About");
-
-//   return (
-//     <h1>{title}</h1>
-//   )
-// }
 
 export default AboutUs
